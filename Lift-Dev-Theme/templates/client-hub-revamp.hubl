@@ -1,0 +1,9 @@
+{% set rows = hubdb_table_rows(111479691) %}
+
+<ul>
+    {% for row in rows %}
+        <li>{{ row.name }}</li>
+        <li>{{ row.program_implementor }}</li>
+
+    {% endfor %}
+</ul>
